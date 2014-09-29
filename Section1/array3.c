@@ -3,7 +3,9 @@
 
 int main(int argc, char const *argv[])
 {
-
+    
+    printf("Number of arguemtns: %d\n", argc);
+    
 	// What does this print?
     if (argc < 2) 
     {

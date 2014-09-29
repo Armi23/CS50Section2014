@@ -17,7 +17,7 @@ int main(int argc, char const *argv[])
 {
 
 	// Once more, what is going to get printed?
-	printf("%d\n", fib(5));
+	printf("%d\n", fib(6));
 
 	return 0;
 }
