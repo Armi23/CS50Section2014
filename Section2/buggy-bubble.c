@@ -1,12 +1,7 @@
 #include <stdio.h>
 
 
-void swap(int a, int b)
-{
-    int temp = a;
-    a = b;
-    b = temp;
-}
+
 
 /**
  * Sorts array in place using bubble sort - optimizes to end if there are
@@ -25,7 +20,9 @@ void sort(int array[], int n)
         {
             if (array[i] > array[i + 1])
             {
-                swap(array[i], array[i+1]);
+                int temp = array[i];
+                array[i] = array[i+1];
+                array[i+1] = temp;
                 swaps++;
              }
         }
