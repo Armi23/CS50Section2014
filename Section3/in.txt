@@ -1,0 +1,3 @@
+This is a file. 
+Are you reading this file? 
+Make sure to use fclose to close the file
