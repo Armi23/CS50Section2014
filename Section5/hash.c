@@ -35,15 +35,11 @@ int main(int argc, char const *argv[])
 		int hash_value = hash(word);
 
 
-		if (hashTable[hash_value] == NULL) {
-			hashTable[hash_value] = calloc(sizeof(node), 1);
-		}
-
 		node* new_node = calloc(sizeof(node), 1);
 
 		new_node->word = word;
-		new_node->next = hashTable[hash_value]->next;
-		hashTable[hash_value]->next = new_node;
+		new_node->next = hashTable[hash_value];
+		hashTable[hash_value] = new_node;
 	}
 
 	printf("Printing words\n");
